@@ -1,10 +1,19 @@
 {
-  "name": "test-package",
+  "name": "unicorn-says-hello-world",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A unicorn that says hello world",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helium1307/test-lib.git"
   },
   "keywords": [],
   "author": "Helio <heliofilho1307@hotmail.com>",
